@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PizzaListComponent } from './Pizzas/pizza-list/pizza-list.component';
+import { BorderCardDirective } from './shared/directive/border-card.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PizzaListComponent,
+    BorderCardDirective  // components directive
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule //module angular, autre smodules
   ],
-  providers: [],
+  providers: [], //sevice
   bootstrap: [AppComponent]
 })
 export class AppModule { }
