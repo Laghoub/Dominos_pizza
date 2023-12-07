@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PizzaListComponent } from './Pizzas/pizza-list/pizza-list.component';
 import { BorderCardDirective } from './shared/directive/border-card.directive';
+import { PizaIngredientColorPipe } from './shared/pipes/piza-ingredient-color.pipe';
+import { DetailsPizzaComponent } from './Pizzas/details-pizza/details-pizza.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaListComponent,
-    BorderCardDirective  // components directive
+    BorderCardDirective,
+    PizaIngredientColorPipe,
+    DetailsPizzaComponent  // components directive
   ],
   imports: [
     BrowserModule,

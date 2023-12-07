@@ -5,7 +5,7 @@ import {Pizza} from "../Pizza";
 
 export const LIST_PIZZAS: Pizza[] = [
   {
-    id: 1,
+    id: "1",
     name: 'Cannibale',
     nutriScore: 'B',
     picture: '../assets/images/crispy_cannibale.png',
@@ -13,7 +13,7 @@ export const LIST_PIZZAS: Pizza[] = [
     created: new Date()
   },
   {
-    id: 2,
+    id: "2",
     name: '4 Fromages',
     nutriScore: 'D',
     picture: '../assets/images/4_fromages.png',
@@ -21,7 +21,7 @@ export const LIST_PIZZAS: Pizza[] = [
     created: new Date()
   },
   {
-    id: 3,
+    id: "3",
     name: 'Deluxe',
     nutriScore: 'B',
     picture: '../assets/images/deluxe.png',
@@ -29,7 +29,7 @@ export const LIST_PIZZAS: Pizza[] = [
     created: new Date()
   },
   {
-    id: 4,
+    id: "4",
     name: 'Diavola',
     nutriScore: 'B',
     picture: '../assets/images/diavola.png',
@@ -37,7 +37,7 @@ export const LIST_PIZZAS: Pizza[] = [
     created: new Date()
   },
   {
-    id: 5,
+    id: "5",
     name: 'Extravaganzza',
     nutriScore: 'C',
     picture: '../assets/images/extravaganzza.png',
@@ -45,7 +45,7 @@ export const LIST_PIZZAS: Pizza[] = [
     created: new Date()
   },
   {
-    id: 6,
+    id: "6",
     name: 'Hypnotika',
     nutriScore: 'E',
     picture: '../assets/images/Hypnotika.png',

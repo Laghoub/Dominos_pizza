@@ -11,7 +11,7 @@
                 <p>
                   <small>{{ singlePizza.created | date | uppercase}}</small>
                 </p>
-                <span *ngFor="let ingredient of singlePizza.compositions">{{ingredient}}</span>
+                <span *ngFor="let ingredient of singlePizza.compositions" class="{{ingredient | pizaIngredientColor}}">{{ingredient }}</span>
               </div>
             </div>
           </div>
