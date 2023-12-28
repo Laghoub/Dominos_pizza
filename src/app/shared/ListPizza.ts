@@ -53,7 +53,7 @@ export const LIST_PIZZAS: Pizza[] = [
     created: new Date()
   },
   {
-    id: 7,
+    id: "7",
     name: 'Veggie',
     nutriScore: 'A',
     picture: '../assets/images/supper_veggie.png',
@@ -61,7 +61,7 @@ export const LIST_PIZZAS: Pizza[] = [
     created: new Date()
   },
   {
-    id: 8,
+    id: "8",
     name: 'Texas Grill',
     nutriScore: 'B',
     picture: '../assets/images/texas_grill.png',
@@ -69,7 +69,7 @@ export const LIST_PIZZAS: Pizza[] = [
     created: new Date()
   },
   {
-    id: 9,
+    id: "9",
     name: 'Urban Kebab',
     nutriScore: 'D',
     picture: '../assets/images/urban_kebab.png',
@@ -77,7 +77,7 @@ export const LIST_PIZZAS: Pizza[] = [
     created: new Date()
   },
   {
-    id: 10,
+    id: "10",
     name: 'Australienne',
     nutriScore: 'B',
     picture: '../assets/images/australienne.png',
@@ -85,7 +85,7 @@ export const LIST_PIZZAS: Pizza[] = [
     created: new Date()
   },
   {
-    id: 11,
+    id: "11",
     name: 'Indienne',
     nutriScore: 'c',
     picture: '../assets/images/indienne.png',
@@ -93,7 +93,7 @@ export const LIST_PIZZAS: Pizza[] = [
     created: new Date()
   },
   {
-    id: 12,
+    id: "12",
     name: 'Chèvre miel',
     nutriScore: 'A',
     picture: '../assets/images/chvremiel.png',

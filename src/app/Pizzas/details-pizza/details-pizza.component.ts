@@ -20,16 +20,18 @@ export class DetailsPizzaComponent implements OnInit {
   ngOnInit(): void {
 
     this.listOfPizza = LIST_PIZZAS;
-    const retriveIdUrl: number | null = this.activatedRoute.snapshot.paramMap.get('id');
+    const retriveIdUrl: string | null = this.activatedRoute.snapshot.paramMap.get('id');
 
     this.listOfPizza.forEach((pizza : Pizza) =>{
-      if (pizza.id == retriveIdUrl ) {
+      if (pizza.id === retriveIdUrl ) {
         this.pizzaToDisplay = pizza
         
       }
 
 
     })
+
+    console.log(this.pizzaToDisplay)
   }
 
   

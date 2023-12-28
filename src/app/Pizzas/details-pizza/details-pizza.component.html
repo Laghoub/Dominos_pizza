@@ -1,1 +1,32 @@
-<p>details-pizza works!</p>
+<!-- details-pizza.component.html -->
+
+
+
+<div *ngIf="pizzaToDisplay; else pizzaNotFound" class='container'>
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img [src]="pizzaToDisplay.picture" alt="{{ pizzaToDisplay.name }}">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <h2>{{ pizzaToDisplay.name }}</h2>
+            <p><strong>NutriScore:</strong> {{ pizzaToDisplay.nutriScore }}</p>
+            <p><strong>Ingrédients:</strong></p>
+            <ul>
+              <li *ngFor="let ingredient of pizzaToDisplay.compositions" class="{{ingredient | pizaIngredientColor}}">
+                {{ ingredient }}
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #pizzaNotFound>
+  <p class='center'>La pizza avec l'identifiant spécifié n'existe pas.</p>
+</ng-template>
