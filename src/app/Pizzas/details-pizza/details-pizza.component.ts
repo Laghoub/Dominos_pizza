@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Pizza } from 'src/app/Pizza';
 import { LIST_PIZZAS } from 'src/app/shared/ListPizza';
 
@@ -13,7 +13,7 @@ export class DetailsPizzaComponent implements OnInit {
   pizzaToDisplay : Pizza | undefined;
   listOfPizza: Pizza[] | undefined; 
 
-  constructor(private activatedRoute : ActivatedRoute){
+  constructor(private activatedRoute : ActivatedRoute,private router: Router){
 
 
   }
@@ -32,6 +32,15 @@ export class DetailsPizzaComponent implements OnInit {
     })
 
     console.log(this.pizzaToDisplay)
+  }
+
+  goBack(): void {
+    this.router.navigate(['/pizzas']); 
+  }
+
+  editerPizza(pizzaToEdit:Pizza): void {
+    const link = ['pizzas/edit',pizzaToEdit.id];
+    this.router.navigate(link);
   }
 
   

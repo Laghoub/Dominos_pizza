@@ -1,41 +1,15 @@
-/* details-pizza.component.scss */
-
-/* Style du conteneur principal */
-.container {
-    margin-top: 20px;
+.card {
+    margin: 60px; 
+    padding: 20px;
+  }
+.card-image img {
+    max-width: 100%; 
+    height: auto; 
+    max-height: 200px; 
   }
   
-  /* Style de la carte pour le détail de la pizza */
-  .card {
-    margin: 0 auto; /* Centre la carte horizontalement */
-  }
-  
-  /* Style du titre de la pizza */
-  h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  /* Style des détails individuels de la pizza */
-  p {
-    margin-bottom: 8px;
-  }
-  
-  /* Style de la liste des ingrédients */
-  ul {
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  
-  /* Style des éléments de la liste des ingrédients */
-  li {
-    margin-bottom: 5px;
-  }
-  
-  /* Style du message lorsque la pizza n'est pas trouvée */
-  #pizzaNotFound {
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
+ 
+  body {
+    padding: 20px;
   }
   
